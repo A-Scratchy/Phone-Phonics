@@ -11,16 +11,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_light"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/questionIamge"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:contentDescription="a chicken"
-            android:src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.scientificamerican.com%2Fsciam%2Fcache%2Ffile%2FEE55973C-F3FD-44D0-9740ED769F6D195C.jpg%3Fw%3D590%26h%3D393%26430D2983-B16C-4594-95095C01918E6ACD"
+            android:src="@drawable/chicken"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +28,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/questionText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_light"
@@ -40,7 +39,7 @@
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@id/imageView"
+        app:layout_constraintRight_toRightOf="@id/questionIamge"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -50,11 +49,13 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option1"
             style="@style/actionButtonStyle"
             android:text="o" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option2"
             style="@style/actionButtonStyle"
             android:text="l" />
     </LinearLayout>
@@ -65,11 +66,13 @@
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option3"
             style="@style/actionButtonStyle"
             android:text="ch" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/option4"
             style="@style/actionButtonStyle"
             android:text="d" />
 
