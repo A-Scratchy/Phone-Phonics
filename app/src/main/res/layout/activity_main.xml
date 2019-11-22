@@ -19,7 +19,7 @@
             android:layout_height="300dp"
             android:layout_gravity="center"
             android:contentDescription="a chicken"
-            android:src="@drawable/chicken"
+            android:src="@drawable/dog"
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
